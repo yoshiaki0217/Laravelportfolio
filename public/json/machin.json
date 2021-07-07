@@ -1,0 +1,15 @@
+{
+	"machine":{
+		"1" : "PC",
+		"2" : "PS4"
+	},
+	"lank":{
+		"champion" : "チャンピオン",
+		"dia" : "ダイア",
+		"platina" : "プラチナ",
+		"gold" : "ゴールド",
+		"silver" : "シルバー",
+		"bronze" : "ブロンズ",
+		"copper" : "コッパー"
+	}
+}

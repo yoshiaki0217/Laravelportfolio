@@ -1,0 +1,869 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  line-height: 1;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: 0.25s;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+  border: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+input[type=text] {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: none;
+}
+
+input[type=submit] {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: none;
+}
+
+textarea {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: none;
+  resize: none;
+}
+
+select {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  padding: 25px 0;
+  color: #fff;
+  background: #494848;
+}
+
+.header {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.header-constent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 2.3rem;
+}
+
+.header-nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.header-nav a {
+  font-size: 2rem;
+}
+
+.catch-inner {
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  background: url(/images/r6s-img01.jpeg?4f49fa04ffa694c34dd9f54f25283bf2) no-repeat top -100px center/cover;
+}
+
+.main-form {
+  position: absolute;
+  right: 50px;
+  bottom: 10px;
+  font-size: 3.5rem;
+}
+
+.main-form a {
+  padding: 20px 50px;
+  background: #fff;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.main-login {
+  margin: 0 0 20px;
+}
+
+.container {
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  background: url(/images/r6s-img01.jpeg?4f49fa04ffa694c34dd9f54f25283bf2) no-repeat top -100px center/cover;
+}
+
+.container-wrap {
+  padding: 100px 0 0;
+}
+
+.container-inner {
+  margin: 0 auto;
+  width: 500px;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  font-size: 2rem;
+  padding: 30px 0;
+}
+
+.login-ttl {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0 0 30px;
+}
+
+.form-group {
+  margin: 0 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-label {
+  width: 150px;
+  margin-right: 10px;
+}
+
+.btn-primary {
+  background: #d4e91c;
+  padding: 10px 100px;
+  margin: 0 0 30px;
+  font-size: 2rem;
+}
+
+.btn-link {
+  border-bottom: 2px solid black;
+  font-size: 1.6rem;
+  padding: 0 0 2px;
+  display: block;
+}
+
+.cmn-bg {
+  background: url(/images/49.png?7cbd17500fc1dd92cc3e1f60f40140a2) top center/cover;
+  width: 100%;
+}
+
+.home-wrap {
+  padding-bottom: 100px;
+}
+
+.home-inner {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 230px;
+  z-index: 10;
+}
+
+.home-ttl {
+  font-size: 7rem;
+  letter-spacing: 1rem;
+  margin-bottom: 130px;
+}
+
+.home-ttl p {
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  font-weight: normal;
+}
+
+.home-ttl,
+.home-ttl span,
+.home-ttl p {
+  position: relative;
+  display: inline-block;
+}
+
+.home-ttl span,
+.home-ttl p {
+  border-radius: 4px;
+  /* text-decoration: none; */
+  text-align: center;
+  -webkit-animation: 3s float ease-in-out infinite;
+          animation: 3s float ease-in-out infinite;
+  animation: 3s float ease-in-out infinite;
+}
+
+.home-ttl::after {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  content: "";
+  width: 100%;
+  height: 24px;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 10px 15px 10px;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-animation: 3s shadow ease-in-out infinite;
+          animation: 3s shadow ease-in-out infinite;
+  animation: 3s shadow ease-in-out infinite;
+}
+
+@-webkit-keyframes float {
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@-webkit-keyframes shadow {
+  50% {
+    width: 70%;
+    height: 18px;
+  }
+}
+
+@keyframes shadow {
+  50% {
+    width: 70%;
+    height: 18px;
+  }
+}
+
+.home-name {
+  font-size: 2rem;
+}
+
+.home-group {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.cmn-home-group a {
+  padding: 20px 20px;
+  font-size: 3rem;
+}
+
+.post-list {
+  padding: 100px 0;
+  background: url(/images/49.png?7cbd17500fc1dd92cc3e1f60f40140a2) top center/cover;
+}
+
+.post-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.post-list-wrap {
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-list-inner {
+  width: 300px;
+  height: 300px;
+  margin: 0 60px 50px 0;
+  position: relative;
+  background: url(/images/video-game-tom-clancy-s-rainbow-six-siege-buck-tom-clancy-s-rainbow-six-siege-minimalist-wallpaper-preview.jpeg?528918cc2f5957d8b0c35440eb479f94) top 45% right 45%;
+}
+
+.post-cover {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  height: 100%;
+  width: 100%;
+}
+
+.post-list-inner:nth-child(3n) {
+  margin-right: 0;
+}
+
+.post-list-inner:nth-child(3n+1) {
+  margin-bottom: 20px;
+}
+
+.post-list-content {
+  border-radius: 15px;
+  padding: 20px 10px;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  font-weight: bold;
+  position: relative;
+}
+
+.post-list-ttl {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.post-list-group {
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px 0;
+}
+
+.post-list-member {
+  font-size: 2.5rem;
+  margin: 0 0 15px 0;
+}
+
+.post-list-choice {
+  font-size: 2.5rem;
+}
+
+.post-list-grade img {
+  width: 150px;
+  height: 150px;
+  margin: 0 10px 0 0;
+}
+
+.post-list-btn {
+  width: 150px;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  text-align: center;
+  background: #000;
+  padding: 5px 0;
+}
+
+.create-inner {
+  padding: 100px 0 100px 0;
+  background: url(/images/49.png?7cbd17500fc1dd92cc3e1f60f40140a2) top center/cover;
+}
+
+.create-form {
+  background: #fff;
+  width: 500px;
+  margin: 0 auto;
+  padding: 30px 0;
+  border-radius: 50px;
+}
+
+.create-ttl {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0 0 30px;
+}
+
+.create-table {
+  display: block;
+  padding: 0 80px;
+  margin: 0 0 20px;
+}
+
+.create-table tr {
+  margin: 0 0 15px;
+  display: flex;
+}
+
+.create-table th {
+  font-size: 1.8rem;
+  width: 110px;
+  text-align: left;
+  vertical-align: middle;
+  padding: 5px;
+  color: #fff;
+  background: #c7c3c3;
+  text-align: center;
+}
+
+.create-table td {
+  border-bottom: solid 1px #777879;
+  width: 180px;
+  font-size: 1.4rem;
+  vertical-align: middle;
+  margin: 0 0 0 10px;
+  padding: 4px 0 0 0;
+}
+
+.create-table select {
+  width: 130px;
+}
+
+.create-table textarea {
+  width: 200px;
+}
+
+.create-btn {
+  text-align: center;
+}
+
+.create-btn input {
+  padding: 8px 50px;
+  background: #c7c3c3;
+  color: #fff;
+}
+
+.create-btn input:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.post-details-wrap {
+  background: url(/images/49.png?7cbd17500fc1dd92cc3e1f60f40140a2) top center/cover;
+  padding: 100px 0;
+}
+
+.post-details-inner {
+  padding: 100px 0;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.post-details-content {
+  background: url(/images/era-icon.jpeg?0d67ad43b20ca9bb70287e80c13202d4) top center/cover;
+  color: #fff;
+  position: relative;
+  min-height: 700px;
+}
+
+.post-details-ttl {
+  padding-top: 50px;
+  font-size: 5rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.post-details-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.post-details-img {
+  width: 300px;
+  height: 300px;
+  margin-right: 30px;
+}
+
+.post-details-member {
+  font-size: 8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #f12525;
+}
+
+.post-details-member span {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.post-details-choice {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.post-comment-ttl {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.post-details-text {
+  width: 500px;
+  min-height: 150px;
+  padding: 25px 20px;
+  margin: 0 auto 30px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.post-details-text p {
+  font-size: 1.8rem;
+  color: #111;
+}
+
+.edit-link,
+.post-details-content a {
+  position: relative;
+  z-index: 10;
+}
+
+.post-details-btn {
+  padding-bottom: 40px;
+}
+
+.post-details-btn a {
+  font-size: 18px;
+  color: #fff;
+  width: 200px;
+  padding: 20px 0;
+  background: #444;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.delete-btn {
+  text-align: center;
+}
+
+.serch-wrap {
+  width: 1000px;
+  margin: 0 auto 80px;
+}
+
+.serch-inner {
+  text-align: center;
+}
+
+.serch-find form {
+  text-align: right;
+  margin-top: -30px;
+}
+
+.serch-item {
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.serch-select {
+  background: #fff;
+  padding: 5px;
+}
+
+.serch-btn {
+  color: #444;
+  background: #fff;
+  padding: 4px 5px;
+  margin-left: 10px;
+}
+
+.request-form {
+  background: #fff;
+  width: 500px;
+  margin: 0 auto;
+  padding: 50px 0;
+  border-radius: 50px;
+}
+
+.request-ttl {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0 0 30px;
+}
+
+.request-table {
+  display: block;
+  padding: 0 80px;
+  margin: 0 0 20px;
+}
+
+.request-table tr {
+  margin: 0 0 15px;
+  display: flex;
+}
+
+.request-table th {
+  font-size: 1.8rem;
+  width: 130px;
+  text-align: left;
+  vertical-align: middle;
+  padding: 5px;
+  color: #fff;
+  background: #c7c3c3;
+  text-align: center;
+}
+
+.request-table td {
+  border-bottom: solid 1px #777879;
+  width: 180px;
+  font-size: 1.4rem;
+  vertical-align: middle;
+  margin: 0 0 0 10px;
+  padding: 4px 0 0 0;
+}
+
+.request-table select {
+  width: 130px;
+}
+
+.request-table textarea {
+  width: 180px;
+}
+
+.request-btn {
+  text-align: center;
+}
+
+.request-btn input {
+  padding: 8px 50px;
+  background: #c7c3c3;
+  color: #fff;
+}
+
+.request-btn input:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.comment {
+  width: 700px;
+  margin: 0 auto;
+  background-color: #5080e7;
+  padding: 50px 30px;
+  margin-bottom: 80px;
+}
+
+.comment-ttl {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.comment-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.comment-content {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 20px;
+}
+
+.comment-content:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+.coment-group {
+  display: flex;
+  font-size: 1.8rem;
+}
+
+.comment-name {
+  margin-right: 10px;
+}
+
+.comment-name span {
+  margin-left: 10px;
+}
+
+.comment-grop-content :not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.slider {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slick-slide img {
+  width: 100%;
+  /* widht100%を指定することにより、画像間の無駄な余白が消える */
+}
+
+.slick-slide {
+  margin: 0 10px 0;
+}
+
+.slick-slide:not(.slick-center) {
+  opacity: 0.5;
+}
+
+img {
+  width: 100%;
+}
+
+/*-----------height調整----------*/
+
+.slick-slide {
+  height: auto !important;
+}
+
+/*------------------------------*/
+
+/*-----------矢印表示----------*/
+
+.slick-next {
+  right: 0 !important;
+}
+
+.slick-prev {
+  left: 0 !important;
+}
+
+.slick-arrow {
+  width: initial !important;
+  height: initial !important;
+  z-index: 2 !important;
+}
+
+.slick-arrow:before {
+  font-size: 30px !important;
+}
+
